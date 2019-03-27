@@ -11,7 +11,9 @@ public class Main {
 		System.setProperty("webdriver.gecko.driver", "/home/cvelasquez/NetBeansProjects/SeleniumScraper/geckodriver");
 		System.setProperty("webdriver.chrome.driver", "/home/cvelasquez/NetBeansProjects/SeleniumScraper/chromedriver");
 
-		BibleScraper notes = new BibleScraper("/home/cvelasquez/Desktop/DouayRheims");
-		notes.scrape();
+		BibleScraper bible = new BibleScraper("/home/cvelasquez/Desktop/Vulgate");
+		bible.scrapeDouayRheims();
+		bible.scrapeKnox();
+		bible.scrapeVulgate();
 	}
 }
